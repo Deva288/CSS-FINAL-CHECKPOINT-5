@@ -1,0 +1,45 @@
+.team{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 55vh;
+    gap: 4rem;
+}
+
+.gallery-pic{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.gallery{
+    background-color: $bg-primary;
+    margin: 1rem;
+}
+.gallery-pic img{
+    height: 100%;
+    border: 3px solid white;
+    border-radius: 8px;
+}
+
+// Responsive
+
+@media screen  and (max-width: 768px) {
+    .team{
+        grid-template-columns: 1fr;
+        height: 70vh;
+        gap: 0rem;
+    }
+
+    .gallery{
+        margin: 0rem;
+    }
+
+    .gallery-pic{
+        grid-template-columns: 1fr;
+        gap: 0rem;
+    }
+    .gallery-pic img{
+        height: 90%;
+    }
+}
